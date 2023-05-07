@@ -9,5 +9,7 @@ case object Exit extends Message                                     // <4>
 /*
 A trait is similar to an abstract class.
 
-The `
+The `sealed` keyword means that we can only define subtypes of `Message`
+in the same file. This prevents bugs where users define their own `Message`
+subtypes that would beak the code.
 */
