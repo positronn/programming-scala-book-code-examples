@@ -2,5 +2,6 @@
 package progscala3.introscala
 
 @main def Hello2(params: String*): Unit =
+  /* `mkString`: concatenate the strings into a final strin. */
   val output = params.map(_.toUpperCase).mkString(" ")
   println(output)
